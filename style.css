@@ -1,0 +1,283 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.nav{
+    font-size: 200px;
+    padding-top: 15px;
+}
+
+.nav-header{
+    color: white;
+    margin-left: 10%;
+}
+
+.nav-buttons{
+    color: white;
+}
+.mr-5:hover{
+    transition: transform 0.4s;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.mr-5{
+    margin-right: 20px;
+    transition: transform 0.4s;
+    padding: 10px;
+}
+
+.pfp-main{
+    border-radius: 80px;
+}
+
+.head0{
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 155, 109, 0.925);
+}
+
+.head1{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(253, 222, 222);
+    font-weight: bold;
+}
+
+.head2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: rgb(191, 241, 241);
+    padding-bottom: 20px;
+}
+
+.socials{
+    scale: 1.5;
+    width: 40%;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right:15%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    margin-left: 7%;
+    transition: transform 0.4s;
+}
+
+.socials img{
+    padding: 10%;
+    transition: transform 0.4s;
+}
+
+.socials img:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+.h-s1 img:hover{
+    content: url("/logos/h1-behance.png")
+}
+.h-s2 img:hover{
+    content:url("/logos/h1-github.png")
+}
+.h-s3 img:hover{
+    content: url("/logos/h1-linkedin.png")
+}
+
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 50px rgb(255, 172, 63);
+}
+
+.subheading{
+    font-family: 'Bebas Neue', sans-serif;
+
+    color: rgba(181, 164, 255, 0.534);
+    text-shadow: 0 0 50px rgb(242, 255, 63);
+}
+
+.scbox{
+    background-color: rgba(255, 255, 255, 0.041);
+    transition: transform 0.6s;
+    color: beige; 
+}
+
+.scbox:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.6s;
+}
+
+.sc-desc{
+    color: rgb(167, 167, 167);
+}
+
+.sc-visit{
+    margin-top: 15px;
+    width: 50%; 
+    height: 40px; 
+    border: 1px solid #000; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgba(255, 153, 0, 0.904);
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+    transition: transform 0.6s;
+}
+
+.sc-visit a{
+    transition: transform 0.6s;
+}
+
+.sc-visit a:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s;
+}
+  
+.about-me{
+    border: 2px solid #333; 
+    padding: 20px; 
+    border-radius: 20px;
+    width: 50%; 
+    margin: 0 auto;
+    background-image: url("/assets/setup.jpg");
+    background-size: cover;
+}
+
+.edu{
+    width: 60%;
+}
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edtext{
+    color: rgb(255, 153, 0);
+}
+.edlogo {
+    transition: transform 0.4s, box-shadow 0.4s; 
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.05); 
+}
+
+.edlogo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.3); 
+}
+
+
+.exp-h{
+    color: white;
+    font-weight: bold;
+}
+.exp{
+    color: rgba(255, 255, 255, 0.623);
+}
+
+.p-head{
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+}
+
+.p-shead{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.p-desc{
+    color: rgba(255, 255, 255, 0.685);
+}
+.p-box{
+    background-color: rgba(0, 29, 160, 0.158);
+}
+
+.white-text{
+    color: white;
+}
+
+.slogo {
+    transition: transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.041);
+}
+
+.slogo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.2); 
+}
+
+.visit{
+    transition: transform 0.4s;
+}
+.visit:hover{
+    transform: scale(1.03);
+    transition: transform 0.4s;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.74); 
+}
+
+.pics{
+    transition: transform 0.4s;
+    border-radius: 4px;
+}
+.pics:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s;
+    text-shadow: 0 0 20px rgba(119, 0, 255, 0.74); 
+}
+
+.join-button{
+    background: orange;
+    transition: background 0.4s, transform 0.4s;
+}
+.join-button:hover{
+    background: rgba(255, 166, 0, 0.849);
+    transform: scale(1.05);
+    transition: background 0.4s, transform 0.4s;
+}
+
+.bnr {
+    transition: transform 0.4s, box-shadow 0.4s; 
+    box-shadow: 0 0 20px rgba(0, 17, 255, 0.897); 
+}
+
+.bnr:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.623); 
+}
+
+.s-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+
+    padding-top: 10px;
+}
+
+.social-icon img {
+    max-width: 100px;
+}
+
+.footer{
+    background-color: #3333333a;
+}
+.ft-img{
+    max-width: 250px; 
+    position:absolute; 
+    right: 300px;
+}
