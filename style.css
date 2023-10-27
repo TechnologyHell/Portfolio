@@ -30,13 +30,13 @@ body{
 .nav-buttons a{
     padding-right: 15px;
 }
-.mr-5:hover{
+.mr-4:hover{
     transition: transform 0.4s;
     transform: scale(1.05);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-.mr-5{
+.mr-4{
     margin-right: 20px;
     transition: transform 0.4s;
     padding: 10px;
