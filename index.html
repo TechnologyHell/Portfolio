@@ -19,7 +19,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="stark-theme">
+    <!-- ARC REACTOR BACKGROUND HUD -->
+    <div class="arc-bg-container">
+        <img class="arc-reactor-img" src="assets/images/arcreactor.png" alt="Arc Reactor Core">
+    </div>
+
     <div class="cursor-glow"></div>
     <div class="custom-cursor"></div>
     <div class="custom-cursor-follower"></div>
@@ -28,7 +33,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-content">
             <div class="logo">
-                <a href="#hero">NT</a>
+                <a href="https://technologyhell.in/" target="_blank">T.E.C.H.</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#systems" class="nav-link">Systems</a></li>
@@ -55,11 +60,11 @@
                 <div class="hero-content fade-in">
                     <p class="micro-text">> initializing system interface...</p>
                     <h2 class="sub-heading">Nitish Singh</h2>
-                    <h1 class="main-heading">I build systems that work in the real world.</h1>
+                    <h1 class="main-heading">Architecting hardware-software ecosystems.</h1>
                     <p class="hero-description">
-                        Builder operating at the intersection of technology and architecture.<br>
-                        I design, prototype, and scale systems across software, hardware, and infrastructure —
-                        integrating logic into physical realities.
+                        Builder operating at the intersection of technology and system architecture.<br>
+                        I design, engineer, and scale end-to-end solutions — integrating logic into physical 
+                        systems that scale beyond the screen.
                     </p>
 
                     <div class="hero-stats">
@@ -80,12 +85,15 @@
                     </div>
                 </div>
                 <div class="hero-visual fade-in delay-1">
-                    <div class="glass-orb"></div>
-                    <div class="glass-card hardware-model">
-                        <div class="circuit-lines"></div>
-                        <div class="chip"></div>
-                        <span>SYSTEM CORE</span>
-                    </div>
+                    <a href="https://technologyhell.in/" target="_blank" class="tech-core-link">
+                        <div class="tech-core">
+                            <div class="ring-layer r1"></div>
+                            <div class="ring-layer r2"></div>
+                            <div class="ring-layer r3"></div>
+                            <div class="ring-layer r4"></div>
+                            <div class="core-text">T.E.C.H.</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -114,11 +122,11 @@
                         <div class="sys-meta"><span class="sys-id">[SYS-01]</span> <span
                                 class="sys-status deployed">[DEPLOYED]</span></div>
                         <h3 class="sys-title">TechDeck Macropad</h3>
-                        <h4 class="sys-subtitle">Firmware to Application Pipeline</h4>
-                        <p class="sys-description">End-to-end hardware development involving custom layered CAD
-                            schematics, STM32 microcontrollers, and a companion profile-mapping desktop engine.</p>
-                        <p class="sys-depth"><strong>Architecture:</strong> C++ firmware serializing inputs into a
-                            Python background daemon dynamically translating context-specific macros.</p>
+                        <h4 class="sys-subtitle">Firmware-to-Application Pipeline</h4>
+                        <p class="sys-description">Owned the complete design-to-deployment lifecycle for high-performance 
+                            input hardware, integrating C++ firmware with a Python-based automation engine.</p>
+                        <p class="sys-depth"><strong>Architecture:</strong> C++ firmware serializing HID inputs into 
+                            a background daemon for dynamic macro-profile mapping across OS layers.</p>
                         <div class="sys-tags">
                             <span class="tag">Embedded Systems</span>
                             <span class="tag">Python Daemon</span>
@@ -146,11 +154,10 @@
                                 DEVELOPMENT]</span></div>
                         <h3 class="sys-title">Smart Infra Hub</h3>
                         <h4 class="sys-subtitle">Unified Local-First Protocol</h4>
-                        <p class="sys-description">Aggregated IoT hub abstracting away vendor dependencies. Seamlessly
-                            bridges databases, real-time CV monitoring, and automation relays entirely locally.</p>
-                        <p class="sys-depth"><strong>Architecture:</strong> Distributed Linux services handling
-                            sub-socket networks, unifying heterogeneous smart devices through a centralized API gateway.
-                        </p>
+                        <p class="sys-description">Engineered a localized orchestration layer for infrastructure, 
+                            abstracting vendor telemetry into a unified, secure routing grid for automation relays.</p>
+                        <p class="sys-depth"><strong>Architecture:</strong> Distributed Linux services handling 
+                            sub-socket networks to unify heterogeneous IoT nodes through a centralized gateway.</p>
                         <div class="sys-tags">
                             <span class="tag">Network Architecture</span>
                             <span class="tag">Computer Vision</span>
@@ -173,12 +180,12 @@
                     <div class="system-info">
                         <div class="sys-meta"><span class="sys-id">[SYS-03]</span> <span
                                 class="sys-status active">[ACTIVE]</span></div>
-                        <h3 class="sys-title">Secure Data Wiping Tool</h3>
+                        <h3 class="sys-title">WipeTech Secure</h3>
                         <h4 class="sys-subtitle">Low-Level Storage Mutator</h4>
-                        <p class="sys-description">A cross-platform pipeline designed to exploit OS persistence flaws,
-                            rigorously zeroing out physical platter allocations to guarantee unrecoverable datasets.</p>
-                        <p class="sys-depth"><strong>Architecture:</strong> Python-based block device interface
-                            overriding standard file allocators to force sequential magnetic overwrite operations.</p>
+                        <p class="sys-description">Designed a cross-platform data pipeline that bypasses file-system 
+                            abstractions to force sequential magnetic overwrite on physical platter allocations.</p>
+                        <p class="sys-depth"><strong>Architecture:</strong> Python-based block device interface 
+                            overriding OS standard allocators to guarantee bit-level data non-persistence.</p>
                         <div class="sys-tags">
                             <span class="tag">OS Internals</span>
                             <span class="tag">Security Subsystems</span>
@@ -233,30 +240,29 @@
                 <div class="proof-card glass-panel fade-in hover-glow">
                     <div class="proof-icon">💰</div>
                     <h3 class="proof-title">Venture Build</h3>
-                    <p class="proof-desc"><strong>What:</strong> Scaled hardware business driving ₹30L+
-                        revenue.<br><strong>How:</strong> Bootstrapped end-to-end supply chain logistics and engineered
-                        an optimized backend scaling throughput by 25%.</p>
+                    <p class="proof-desc"><strong>What:</strong> Scaled hardware venture to ₹30L+ revenue.<br><strong>How:</strong> 
+                        Owned the end-to-end supply chain and engineered a backend pipeline that optimized throughput 
+                        by 25% under peak load.</p>
                 </div>
                 <div class="proof-card glass-panel fade-in delay-1 hover-glow">
                     <div class="proof-icon">🏆</div>
                     <h3 class="proof-title">SIH Victory</h3>
-                    <p class="proof-desc"><strong>What:</strong> Internal Hackathon Winning
-                        Protocol.<br><strong>How:</strong> Engineered a Python storage-mutator bypassing standard
-                        platter allocators for guaranteed cross-platform file destruction.</p>
+                    <p class="proof-desc"><strong>What:</strong> Winner - Internal Hackathon Protocol.<br><strong>How:</strong> 
+                        Engineered a storage-mutator protocol overriding standard OS platter allocators for guaranteed 
+                        data non-persistence.</p>
                 </div>
                 <div class="proof-card glass-panel fade-in delay-2 hover-glow">
                     <div class="proof-icon">🥇</div>
                     <h3 class="proof-title">CDAC Summit</h3>
-                    <p class="proof-desc"><strong>What:</strong> Rank 1 Technical Project in Additive
-                        Manufacturing.<br><strong>How:</strong> Designed functional prototypes blending advanced CAD
-                        topology with real-world FDM manufacturing constraints.</p>
+                    <p class="proof-desc"><strong>What:</strong> Rank 1 Technical Project Victoria.<br><strong>How:</strong> 
+                        Owned the prototype design cycle, blending architectural CAD topology with real-world FDM 
+                        manufacturing constraints.</p>
                 </div>
                 <div class="proof-card glass-panel fade-in delay-3 hover-glow">
                     <div class="proof-icon">🌍</div>
                     <h3 class="proof-title">Global Hardware</h3>
-                    <p class="proof-desc"><strong>What:</strong> Rank 4 overall out of 180+ international
-                        teams.<br><strong>How:</strong> Integrated firmware, desktop telemetry, and 3D-structural
-                        layouts to deploy the TechDeck Macropad at IHMMC.</p>
+                    <p class="proof-desc"><strong>What:</strong> Rank 4 overall out of 180+ international teams.<br><strong>How:</strong> 
+                        Integrated firmware, desktop telemetry, and 3D structural layouts to deploy the TechDeck Macropad at IHMMC.</p>
                 </div>
             </div>
         </section>
@@ -279,24 +285,44 @@
                             <span class="tl-date">Ongoing</span>
                         </div>
                         <ul class="tl-list">
-                            <li><strong>Ownership:</strong> Autonomous direction of physical supply chains, product
-                                lifecycles, and digital infrastructure scaled beyond ₹30L+ ARR.</li>
+                            <li>Owned the engineering and business architecture for a hardware-focused venture, scaling to ₹30L+ annual revenue.</li>
+                            <li>Engineered system-level hardware/firmware integrations using microcontroller logic and Python automation pipelines.</li>
+                            <li>Architected Node.js + MongoDB infrastructure, reducing latency by 25% and ensuring high availability for order tracking.</li>
+                            <li>Owned the end-to-end supply chain logistics, vendor negotiations, and technical inventory planning for consistent delivery.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="timeline-item fade-in">
+                <div class="timeline-item fade-in delay-1">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-panel">
                         <div class="tl-header">
-                            <h3 class="tl-title">Project Coordinator</h3>
+                            <h3 class="tl-title">President - SIT Ideathon 4.0</h3>
+                            <span class="tl-company"><a href="https://ideathon.pages.dev/" target="_blank">Siliguri Institute of Technology</a></span>
+                            <span class="tl-date">Ongoing</span>
+                        </div>
+                        <ul class="tl-list">
+                            <li>Owned high-level tournament execution for 100+ participants, coordinating technical judging and pitch orchestration.</li>
+                            <li>Architected the evaluation framework for innovation-led prototypes, ensuring technical feasibility vs. business viability audits.</li>
+                            <li>Managed stakeholder relations between industry partners and innovators to secure pilot-phase interest.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="tl-header">
+                            <h3 class="tl-title">Business Associate + Coordinator</h3>
                             <span class="tl-company"><a href="https://webmarvel.in/"
                                     target="_blank">WebMarvel</a></span>
                             <span class="tl-date">Past</span>
                         </div>
                         <ul class="tl-list">
-                            <li><strong>Ownership:</strong> Speearheaded delivery routing and translated client business
-                                parameters into 100% SLA-compliant technical execution paths.</li>
+                            <li>Owned the technical delivery layer for enterprise projects, aligning technical execution with client business requirements.</li>
+                            <li>Architected technical specification pipelines, reducing development iteration cycles by 30%.</li>
+                            <li>Acted as the primary technical bridge between stakeholders and developers, resolving technical ambiguities in real-time.</li>
+                            <li>Engineered streamlined delivery workflows and requirement pipelines, maintaining strict adherence to project SLAs.</li>
                         </ul>
                     </div>
                 </div>
@@ -349,6 +375,28 @@
                         <span class="stack-tag">Git Telemetry</span>
                     </div>
                 </div>
+
+                <div class="stack-category fade-in">
+                    <h3 class="stack-title">Product & Operations</h3>
+                    <div class="stack-items">
+                        <span class="stack-tag">Supply Chain Systems</span>
+                        <span class="stack-tag">Product Lifecycle (PLM)</span>
+                        <span class="stack-tag">Cost Optimization</span>
+                        <span class="stack-tag">Vendor Coordination</span>
+                        <span class="stack-tag">Customer Systems</span>
+                    </div>
+                </div>
+
+                <div class="stack-category fade-in delay-1">
+                    <h3 class="stack-title">System Design & Architecture</h3>
+                    <div class="stack-items">
+                        <span class="stack-tag">Modular Architecture</span>
+                        <span class="stack-tag">Local-first Systems</span>
+                        <span class="stack-tag">API Integration</span>
+                        <span class="stack-tag">Data Flow Design</span>
+                        <span class="stack-tag">Multi-layer System Thinking</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -359,28 +407,66 @@
                 <div class="section-line"></div>
             </div>
 
-            <div class="achievement-list glass-panel fade-in">
-                <div class="ach-item">
-                    <span class="ach-icon">🌍</span>
-                    <div class="ach-text"><strong>Global Rank 4 / 180+</strong> - Innovative Hardware Model Making
-                        Competition</div>
-                </div>
-                <div class="ach-item">
-                    <span class="ach-icon">🏆</span>
-                    <div class="ach-text"><strong>National Winner</strong> - SIT Ideathon 4.0 Pitch Tournament</div>
-                </div>
-                <div class="ach-item">
-                    <span class="ach-icon">🥇</span>
-                    <div class="ach-text"><strong>Rank 1 Technical Layer</strong> - CDAC Additive Manufacturing Summit
+            <div class="ach-grid-final">
+                <div class="ach-card glass-panel animate-border fade-in">
+                    <div class="ach-header">
+                        <span class="ach-badge">ELITE</span>
+                        <span class="ach-icon">🏆</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>SIH Logic Champion</h3>
+                        <p>Rank 1 - Internal Subsystem Logic Hackathon. Engineered a storage-mutator protocol for OS-level data non-persistence.</p>
                     </div>
                 </div>
-                <div class="ach-item">
-                    <span class="ach-icon">🥇</span>
-                    <div class="ach-text"><strong>Champion</strong> - SIH Internal Subsystem Hackathon</div>
+                <div class="ach-card glass-panel animate-border fade-in delay-1">
+                    <div class="ach-header">
+                        <span class="ach-badge">GLOBAL</span>
+                        <span class="ach-icon">🌍</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>IHMMC Rank 4</h3>
+                        <p>Rank 4 / 180+ teams globally. Integrated firmware, desktop telemetry, and structural layouts for TechDeck deployments.</p>
+                    </div>
                 </div>
-                <div class="ach-item">
-                    <span class="ach-icon">🥇</span>
-                    <div class="ach-text"><strong>Prototype Victor</strong> - Vision to Venture (IIT Bombay)</div>
+                <div class="ach-card glass-panel animate-border fade-in delay-2">
+                    <div class="ach-header">
+                        <span class="ach-badge">TECHNICAL</span>
+                        <span class="ach-icon">🥇</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>CDAC Technical Layer 1</h3>
+                        <p>Rank 1 - Additive Manufacturing Summit. Blended advanced CAD topology with real-world manufacturing constraints.</p>
+                    </div>
+                </div>
+                <div class="ach-card glass-panel animate-border fade-in delay-3">
+                    <div class="ach-header">
+                        <span class="ach-badge">LEADERSHIP</span>
+                        <span class="ach-icon">🏆</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>Eureka! Winner</h3>
+                        <p>National Winner - SIT Ideathon 4.0. Architected the winning pitch orchestration and evaluation framework.</p>
+                    </div>
+                </div>
+                <div class="ach-card glass-panel animate-border fade-in delay-4">
+                    <div class="ach-header">
+                        <span class="ach-badge">HARDWARE</span>
+                        <span class="ach-icon">🤖</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>Robotics Victor</h3>
+                        <p>Prototype victory at Vision to Venture (IIT Bombay). Designed hardware logic for functional robotic nodes.</p>
+                    </div>
+                </div>
+                <div class="ach-card glass-panel animate-border fade-in delay-5">
+                    <div class="ach-header">
+                        <span class="ach-badge">STRATEGY</span>
+                        <span class="ach-icon">🧠</span>
+                    </div>
+                    <div class="ach-body">
+                        <h3>National Finalist</h3>
+                        <p>Top tiered execution in high-level Quizzing and Strategy tournaments at national orchestration levels.</p>
+                    </div>
                 </div>
             </div>
         </section>
