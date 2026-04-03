@@ -1059,8 +1059,6 @@ h1, h2, h3, h4 {
 
 .proof-card:hover {
     box-shadow: 0 10px 35px rgba(255, 215, 0, 0.08); 
-    background: rgba(255, 215, 0, 0.02); 
-    border-color: rgba(255, 215, 0, 0.35); /* Soft gold outline */
     z-index: 10;
 }
 
@@ -1201,32 +1199,84 @@ h1, h2, h3, h4 {
     line-height: 1.6;
 }
 
-/* CONTACT */
+/* CONTACT SECTION ENHANCEMENT */
+.contact {
+    position: relative;
+    z-index: 1;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+}
+
 .contact-container {
     text-align: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 60px 20px;
+    transition: var(--transition);
 }
+
+/* Container hover effect removed as it is now sitting flat on background */
 
 .contact-heading {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-family: var(--font-head);
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
 }
 
 .contact-ctas {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .contact-ctas .btn {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
     text-align: center;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.contact-ctas .btn-primary {
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.15);
+}
+
+.contact-ctas .btn-primary:hover {
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.25);
+    background: #fff; /* Invert on hover for premium feel */
+    color: #000;
+}
+
+.contact-ctas .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-ctas .btn-secondary:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.08);
 }
 
 /* FOOTER */
