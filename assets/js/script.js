@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Add hover effect for clickable elements
-        const clickables = document.querySelectorAll('a, button, .system-card, .proof-card');
+        const clickables = document.querySelectorAll('a, button, .system-card, .proof-card, .edu-card');
         
         clickables.forEach(el => {
             el.addEventListener('mouseenter', () => {
@@ -157,8 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000);
     }
 
-    // 6.5 DYNAMIC SPOTLIGHT & TILT (Proof & Achievement Cards)
-    const spotlightCards = document.querySelectorAll('.proof-card, .ach-card');
+    // 6.5 DYNAMIC SPOTLIGHT & TILT (Proof, Achievement & Education Cards)
+    const spotlightCards = document.querySelectorAll('.proof-card, .ach-card, .edu-card');
     spotlightCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             // Smoothly prepare the card for tilt tracking

@@ -943,8 +943,113 @@ h1, h2, h3, h4 {
     padding-left: 20px;
 }
 
-.tl-list li {
-    margin-bottom: 8px;
+/* ACADEMIC TELEMETRY (EDUCATION) */
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.edu-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.4s ease, 
+                background 0.4s ease,
+                border-color 0.4s ease;
+    will-change: transform, box-shadow;
+}
+
+.edu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        500px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), 
+        rgba(0, 229, 255, 0.05), 
+        transparent 50%
+    );
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.edu-card:hover::before {
+    opacity: 1;
+}
+
+.edu-card:hover {
+    box-shadow: 0 10px 35px rgba(0, 229, 255, 0.08); 
+    background: rgba(0, 229, 255, 0.02);
+    border-color: var(--accent-blue);
+    z-index: 10;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading-alt);
+    font-size: 0.85rem;
+}
+
+.edu-badge {
+    color: var(--accent-blue);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.edu-date {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.edu-title {
+    font-size: 1.35rem;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.edu-spec {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.edu-inst {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.edu-metric {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.metric-label {
+    font-family: var(--font-heading-alt);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+.metric-value {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1;
 }
 
 /* BUILD STACK */
